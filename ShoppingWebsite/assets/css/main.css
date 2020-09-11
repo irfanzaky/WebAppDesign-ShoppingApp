@@ -26,16 +26,12 @@ body {
   line-height: 1.4;
 }
 
-li {
-  list-style: none;
-  margin: 5px;
-}
-
 li,
-a,
-button {
+a {
+  list-style: none;
   text-decoration: none;
 }
+
 p {
   font-size: 8px;
 }
@@ -43,15 +39,6 @@ p {
 /* end of globals */
 
 /* Header footer */
-
-header li,
-header a,
-header button {
-  color: var(--mainBlack);
-  padding: 0px 0px;
-  font-size: 8px;
-  display: inline-block;
-}
 
 header {
   display: flex;
@@ -61,6 +48,19 @@ header {
   padding: 0px 30px;
   box-shadow: 8px 8px 16px var(--shadowDark);
   background-color: #ffffff;
+}
+header li,
+header a,
+header button {
+  color: var(--mainBlack);
+  padding: 0px 0px;
+  font-size: 8px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+header li {
+  margin: 5px;
 }
 
 header img {
@@ -117,7 +117,7 @@ footer {
 
 .menu-img {
   width: 100%;
-  border-radius: 3px;
+  border-radius: -3px;
 }
 
 .menu-text {

@@ -75,12 +75,13 @@
     <!-- Category Slider -->
 
     <div class="category-card-container">
+      <h5>Shop By Category</h5>
       <div class="category-card">
-        <img class="menu-img" src="assets/images/woman2.jfif" alt="woman" />
+        <img class="menu-img" src="assets/images/womansports.jpg" alt="woman" />
         <div class="menu-text">SPORTS WEAR</div>
       </div>
       <div class="category-card">
-        <img class="menu-img" src="assets/images/man2.jpg" alt="man" />
+        <img class="menu-img" src="assets/images/daily.jpg" alt="man" />
         <div class="menu-text">DAILY WEAR</div>
       </div>
       <div class="category-card">
@@ -149,6 +150,7 @@
         var i;
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
+        console.log(slides, dots);
         if (n > slides.length) {
           slideIndex = 1;
         }
