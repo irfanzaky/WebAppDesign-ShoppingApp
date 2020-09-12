@@ -63,21 +63,25 @@ ul.breadcrumb li a:hover {
   margin: 10px;
   overflow: hidden;
   position: relative;
+  transition: 0.5s;
+}
+.card:hover {
+  box-shadow: 10px 10px 10px var(--shadowDark), -15px -15px 20px var(--shadowWhite);
 }
 
 .item-card {
   box-shadow: 5px 5px 10px var(--shadowDark), -10px -10px 16px var(--shadowWhite);
-  height: 137px;
   border-radius: 3px;
   margin: 10px;
+  height: 145px;
   overflow: hidden;
   position: relative;
-  transition: 0.5 s;
+  transition: 0.5s;
 }
 
 .item-card:hover {
   box-shadow: 10px 10px 10px var(--shadowDark), -15px -15px 20px var(--shadowWhite);
-  height: 145px;
+  transform: translate(0, -10px);
 }
 
 .small-card {

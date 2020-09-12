@@ -113,6 +113,12 @@ footer {
   padding: 0px;
   overflow: hidden;
   position: relative;
+  transition: 0.5s;
+}
+
+.menu-card:hover {
+  box-shadow: 10px 10px 10px var(--shadowDark), -15px -15px 20px var(--shadowWhite);
+  transform: translate(0, -5px);
 }
 
 .menu-img {
@@ -150,4 +156,21 @@ footer {
   margin: 10px 0px;
   overflow: hidden;
   position: relative;
+  transition: 0.5s;
+}
+
+.category-card:hover {
+  box-shadow: 10px 10px 10px var(--shadowDark), -15px -15px 20px var(--shadowWhite);
+  transform: translate(0, -5px);
+}
+
+.clickable {
+  position: relative;
+}
+.clickable a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
 }
