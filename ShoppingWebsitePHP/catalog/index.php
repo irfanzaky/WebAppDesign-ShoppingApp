@@ -10,7 +10,10 @@
 
   <body>
     <!-- Header -->
-    <?php require_once ("../header.php"); ?>
+    <?php 
+    require_once ("../assets/php/CreateDb.php");
+    $database = new CreateDb("ProductDB","ProductTB")
+    require_once ("../header.php"); ?>
 
     <!-- Breadcrumpts -->
     <div class="breadcrumpts-container">
