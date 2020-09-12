@@ -1,0 +1,146 @@
+ul.breadcrumb {
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  color: var(--mainBlack);
+  font-size: 8px;
+  display: inline-block;
+  text-decoration: none;
+}
+ul.breadcrumb li + li:before {
+  padding: 0 5px 0 0;
+  color: black;
+  content: "/";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+}
+
+.breadcrumpts-container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 360px;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #999;
+}
+
+/* menu selection */
+
+.catalog {
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px;
+  width: 400px;
+}
+
+.card-container {
+  margin: 0 auto 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.card-wrap {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.card {
+  box-shadow: 5px 5px 10px var(--shadowDark), -10px -10px 16px var(--shadowWhite);
+  height: 110px;
+  border-radius: 3px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+}
+.card:hover {
+  box-shadow: 10px 10px 10px var(--shadowDark), -15px -15px 20px var(--shadowWhite);
+}
+
+.item-card {
+  box-shadow: 5px 5px 10px var(--shadowDark), -10px -10px 16px var(--shadowWhite);
+  border-radius: 3px;
+  width: 78px;
+  margin: 10px;
+  height: 145px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+}
+
+.item-card:hover {
+  box-shadow: 10px 10px 10px var(--shadowDark), -15px -15px 20px var(--shadowWhite);
+  transform: translate(0, -10px);
+}
+
+
+.item-summary p {
+  color: #222;
+  font-weight: 500;
+  font-size: 5px;
+  padding: 0 5px;
+  text-align: left;
+}
+
+/* next and prev */
+.prev,
+.next {
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination {
+  display: inline-block;
+  bottom: 0%;
+  margin: auto;
+  width: 100px;
+  right: 10%;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 2px 4px;
+  font-size: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
+  background-color: #000000;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
