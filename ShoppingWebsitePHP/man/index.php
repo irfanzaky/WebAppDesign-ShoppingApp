@@ -24,19 +24,19 @@
     <div class="catalog">
       <div class="card-container">
         <div class="card">
-          <img class="menu-img" src="../assets/images/jogger.jfif" alt="woman" />
+          <img class="menu-img" src="../assets/images/men_jogger.jfif" alt="woman" />
           <div class="menu-text">JOGGER</div>
         </div>
         <div class="card">
-          <img class="menu-img" src="../assets/images/tshirt.jfif" alt="man" />
+          <img class="menu-img" src="../assets/images/men_tshirt.jfif" alt="man" />
           <div class="menu-text">BASIC</div>
         </div>
         <div class="card">
-          <img class="menu-img" src="../assets/images/jeans.jfif" alt="kids" />
+          <img class="menu-img" src="../assets/images/men_jeans.jfif" alt="kids" />
           <div class="menu-text">JEANS</div>
         </div>
         <div class="card">
-          <img class="menu-img" src="../assets/images/formal.jfif" alt="kids" />
+          <img class="menu-img" src="../assets/images/men_formal.jfif" alt="kids" />
           <div class="menu-text">FORMAL</div>
         </div>
       </div>
@@ -47,10 +47,10 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 
         <?php require_once ("item-card.php"); 
-          card("Water-repellent car coat","S$84.85","S, M, L", "../assets/images/water.jfif","../sdflog");
-          card("Shirt Regular Fit","S$29.955","XS, S, M, L","../assets/images/shirt.jfif","../catalog");
-          card("Cargo Jogger","S$34.85","XS, S, M, L","../assets/images/cargo.jfif" ,"../catalog");
-          card("Cotton Cardigan","S$36.15","XS, S, M, L","../assets/images/cardigan.jfif","../catalog");
+          card("Water-repellent car coat","S$84.85","S, M, L", "../assets/images/men_water.jfif","../sdflog");
+          card("Shirt Regular Fit","S$29.955","XS, S, M, L","../assets/images/men_shirt.jfif","../catalog");
+          card("Cargo Jogger","S$34.85","XS, S, M, L","../assets/images/men_cargo.jfif" ,"../catalog");
+          card("Cotton Cardigan","S$36.15","XS, S, M, L","../assets/images/men_cardigan.jfif","../catalog");
           
         ?>
 
@@ -62,10 +62,10 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 
         <?php require_once ("item-card.php"); 
-          card("Water-repellent car coat","S$84.85","S, M, L", "../assets/images/jogger.jfif","../catalog");
-          card("Shirt Regular Fit","S$29.955","XS, S, M, L","../assets/images/tshirt.jfif","../catalog");
-          card("Cargo Jogger","S$34.85","XS, S, M, L","../assets/images/jeans.jfif" ,"../catalog");
-          card("Cotton Cardigan","S$36.15","XS, S, M, L","../assets/images/formal.jfif","../catalog");
+          card("Water-repellent car coat","S$84.85","S, M, L", "../assets/images/men_jogger.jfif","../catalog");
+          card("Shirt Regular Fit","S$29.955","XS, S, M, L","../assets/images/men_tshirt.jfif","../catalog");
+          card("Cargo Jogger","S$34.85","XS, S, M, L","../assets/images/men_jeans.jfif" ,"../catalog");
+          card("Cotton Cardigan","S$36.15","XS, S, M, L","../assets/images/men_formal.jfif","../catalog");
           
         ?>
         

@@ -26,14 +26,14 @@
       <h5>Jeans</h5>
       <div class="card-container card-wrap">
         <?php require_once ("item-card.php"); 
-          card("Water-repellent car coat","S$84.85","S, M, L", "../assets/images/water.jfif","");
-          card("Shirt Regular Fit","S$29.955","XS, S, M, L","../assets/images/shirt.jfif","");
-          card("Cargo Jogger","S$34.85","XS, S, M, L","../assets/images/cargo.jfif","" );
-          card("Cotton Cardigan","S$36.15","XS, S, M, L","../assets/images/cardigan.jfif","");
-          card("Cotton Cardigan","S$36.15","XS, S, M, L","../assets/images/cardigan.jfif","");
-          card("Water-repellent car coat","S$84.85","S, M, L", "../assets/images/water.jfif","");
-          card("Shirt Regular Fit","S$29.955","XS, S, M, L","../assets/images/shirt.jfif","");
-          card("Cargo Jogger","S$34.85","XS, S, M, L","../assets/images/cargo.jfif" ,"");
+          card("Water-repellent car coat","S$84.85","S, M, L", "../assets/images/men_water.jfif","");
+          card("Shirt Regular Fit","S$29.955","XS, S, M, L","../assets/images/men_shirt.jfif","");
+          card("Cargo Jogger","S$34.85","XS, S, M, L","../assets/images/men_cargo.jfif","" );
+          card("Cotton Cardigan","S$36.15","XS, S, M, L","../assets/images/men_cardigan.jfif","");
+          card("Cotton Cardigan","S$36.15","XS, S, M, L","../assets/images/men_cardigan.jfif","");
+          card("Water-repellent car coat","S$84.85","S, M, L", "../assets/images/men_water.jfif","");
+          card("Shirt Regular Fit","S$29.955","XS, S, M, L","../assets/images/men_shirt.jfif","");
+          card("Cargo Jogger","S$34.85","XS, S, M, L","../assets/images/men_cargo.jfif" ,"");
         ?>
 
       </div>
