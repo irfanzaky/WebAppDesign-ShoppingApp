@@ -54,18 +54,18 @@ header a,
 header button {
   color: var(--mainBlack);
   padding: 0px 0px;
-  font-size: 8px;
+  font-size: 20px;
   display: inline-block;
   text-decoration: none;
 }
 
 header li {
-  margin: 5px;
+  margin: 15px;
 }
 
 header img {
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
 }
 
 footer li,
@@ -90,7 +90,7 @@ footer {
   align-items: center;
   flex-direction: row;
   padding: 10px 10px;
-  width: 400px;
+  width: 800px;
 }
 
 /* menu selection */
@@ -102,14 +102,14 @@ footer {
   align-items: center;
   flex-direction: row;
   padding: 10px 10px;
-  width: 400px;
+  width: 760px;
 }
 .menu-card {
   box-shadow: 5px 5px 10px var(--shadowDark), -10px -10px 16px var(--shadowWhite);
-  width: 150px;
-  height: 70px;
-  border-radius: 3px;
-  margin: 10px;
+  width: 400px;
+  height: 180px;
+  border-radius: 10px;
+  margin: 20px;
   padding: 0px;
   overflow: hidden;
   position: relative;
@@ -129,7 +129,7 @@ footer {
 .menu-text {
   color: #ffffff;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 40px;
   position: absolute;
   bottom: 24px;
   width: 100%;
@@ -144,16 +144,16 @@ footer {
   align-items: center;
   flex-direction: column;
   padding: 10px 10px;
-  width: 400px;
+  width: 80%;
 }
 
 .category-card {
   box-shadow: 5px 5px 10px var(--shadowDark), -10px -10px 16px var(--shadowWhite);
-  width: 360px;
-  height: 200px;
-  border-radius: 3px;
+  width: 700px;
+  height: 400px;
+  border-radius: 10px;
   padding: 0px;
-  margin: 10px 0px;
+  margin: 20px 0px;
   overflow: hidden;
   position: relative;
   transition: 0.5s;
@@ -161,7 +161,7 @@ footer {
 
 .category-card:hover {
   box-shadow: 10px 10px 10px var(--shadowDark), -15px -15px 20px var(--shadowWhite);
-  transform: translate(0, -5px);
+  transform: translate(0, -15px);
 }
 
 .clickable {

@@ -18,17 +18,17 @@
     <div class="slideshow-container">
       <div class="mySlides fade">
         <img src="assets/images/woman.jfif" />
-        <div class="header-text">Caption Text</div>
+        <div class="header-text">Just New</div>
       </div>
 
       <div class="mySlides fade">
         <img src="assets/images/woman.jpg" />
-        <div class="header-text">Caption Two</div>
+        <div class="header-text">Elite</div>
       </div>
 
       <div class="mySlides fade">
         <img src="assets/images/hmgoepprod.jfif" />
-        <div class="header-text">Caption Three</div>
+        <div class="header-text">Affordable</div>
       </div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
