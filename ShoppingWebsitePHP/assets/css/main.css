@@ -33,7 +33,7 @@ a {
 }
 
 p {
-  font-size: 8px;
+  font-size: 16px;
 }
 
 /* end of globals */
@@ -72,7 +72,7 @@ footer li,
 footer a {
   color: var(--mainWhite);
   padding: 0px 0px;
-  font-size: 8px;
+  font-size: 16px;
 }
 
 footer {
@@ -90,7 +90,7 @@ footer {
   align-items: center;
   flex-direction: row;
   padding: 10px 10px;
-  width: 800px;
+  width: 90%;
 }
 
 /* menu selection */
@@ -102,12 +102,12 @@ footer {
   align-items: center;
   flex-direction: row;
   padding: 10px 10px;
-  width: 760px;
+  max-width: 960px;
 }
 .menu-card {
   box-shadow: 5px 5px 10px var(--shadowDark), -10px -10px 16px var(--shadowWhite);
   width: 400px;
-  height: 180px;
+  height: 140px;
   border-radius: 10px;
   margin: 20px;
   padding: 0px;
@@ -118,7 +118,7 @@ footer {
 
 .menu-card:hover {
   box-shadow: 10px 10px 10px var(--shadowDark), -15px -15px 20px var(--shadowWhite);
-  transform: translate(0, -5px);
+  transform: translate(0, -15px);
 }
 
 .menu-img {
@@ -149,8 +149,8 @@ footer {
 
 .category-card {
   box-shadow: 5px 5px 10px var(--shadowDark), -10px -10px 16px var(--shadowWhite);
-  width: 700px;
-  height: 400px;
+  width: 900px;
+  height: 300px;
   border-radius: 10px;
   padding: 0px;
   margin: 20px 0px;

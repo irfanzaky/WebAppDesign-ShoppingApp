@@ -38,7 +38,7 @@ ul.breadcrumb li a:hover {
   align-items: center;
   text-align: center;
   padding: 10px 10px;
-  width: 400px;
+  width: 960px;
 }
 
 .card-container {
@@ -47,7 +47,7 @@ ul.breadcrumb li a:hover {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 400px;
+  width: 900px;
   text-align: center;
   position: relative;
 }
@@ -58,9 +58,9 @@ ul.breadcrumb li a:hover {
 }
 .card {
   box-shadow: 5px 5px 10px var(--shadowDark), -10px -10px 16px var(--shadowWhite);
-  height: 110px;
-  border-radius: 3px;
-  margin: 10px;
+  height: 260px;
+  border-radius: 10px;
+  margin: 20px;
   overflow: hidden;
   position: relative;
   transition: 0.5s;
@@ -69,12 +69,22 @@ ul.breadcrumb li a:hover {
   box-shadow: 10px 10px 10px var(--shadowDark), -15px -15px 20px var(--shadowWhite);
 }
 
+.item-card-container {
+  margin: 0 auto 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 940px;
+  text-align: center;
+  position: relative;
+}
 .item-card {
   box-shadow: 5px 5px 10px var(--shadowDark), -10px -10px 16px var(--shadowWhite);
-  border-radius: 3px;
-  width: 78px;
+  border-radius: 10px;
+  width: 200px;
   margin: 10px;
-  height: 145px;
+  height: 300px;
   overflow: hidden;
   position: relative;
   transition: 0.5s;
@@ -85,11 +95,10 @@ ul.breadcrumb li a:hover {
   transform: translate(0, -10px);
 }
 
-
 .item-summary p {
   color: #222;
   font-weight: 500;
-  font-size: 5px;
+  font-size: 13px;
   padding: 0 5px;
   text-align: left;
 }
@@ -102,7 +111,7 @@ ul.breadcrumb li a:hover {
   width: auto;
   color: black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 50px;
   transition: 0.6s ease;
   border-radius: 3px 0 0 3px;
 }
@@ -123,21 +132,20 @@ ul.breadcrumb li a:hover {
   display: inline-block;
   bottom: 0%;
   margin: auto;
-  width: 100px;
   right: 10%;
 }
 
 .pagination a {
   color: black;
   float: left;
-  padding: 2px 4px;
-  font-size: 5px;
+  font-size: 16px;
+  padding: 8px 16px;
   text-decoration: none;
   transition: background-color 0.3s;
 }
 
 .pagination a.active {
-  background-color: #000000;
+  background-color: grey;
   color: white;
 }
 

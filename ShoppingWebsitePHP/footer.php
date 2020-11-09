@@ -1,16 +1,16 @@
 <footer>
     <div class="footer-container">
     <nav>
-        <h5>Shop</h5>
+        <h2>Shop</h2>
         <ul class="navlink">
-        <li><a href="/WebAppDesign-ShoppingApp/ShoppingWebsitePHP/man">Man</a></li>
+        <li><a href="./man">Man</a></li>
         <li><a href="/WebAppDesign-ShoppingApp/ShoppingWebsitePHP/woman">Woman</a></li>
         <li><a href="/WebAppDesign-ShoppingApp/ShoppingWebsitePHP/kids">Kids</a></li>
         <li><a href="kids.php">...</a></li>
         </ul>
     </nav>
     <nav>
-        <h5>About Us</h5>
+        <h2>About Us</h2>
         <ul class="navlink">
         <li><a href="men.php">Company Profile</a></li>
         <li><a href="woman.php">Careers and Opportunity</a></li>
@@ -19,7 +19,7 @@
         </ul>
     </nav>
     <nav>
-        <h5>Customers Servivce</h5>
+        <h2>Customers Servivce</h2>
         <ul class="navlink">
         <li><a href="men.php">Delivery</a></li>
         <li><a href="woman.php">Returns</a></li>

@@ -60,7 +60,7 @@
     <!-- Category Card -->
 
     <div class="category-card-container">
-      <h5>Shop By Category</h5>
+      <h2>Shop By Category</h2>
       <div class="category-card clickable">
         <a href="men.php"></a>
         <img class="menu-img" src="assets/images/womansports.jpg" alt="woman" />

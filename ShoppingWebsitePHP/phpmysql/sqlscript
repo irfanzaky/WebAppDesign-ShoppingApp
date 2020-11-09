@@ -1,0 +1,53 @@
+insert INTO catalog values ('1001','men','casual','top','Fall Cardigan','14.99','"S,M,L,XL"','"RED,BLACK,YELLOW,GREY"','Comfortable wear for the fall season','13','../assets/images/men_cardigan.jfif'),
+
+('1002','men','casual','bottom','Cargo Pants','24.99','"M,L,XL,XXL"','"BROWN,BLACK"','Easy to fit pants for everyday use','13','../assets/images/men_cargo.jfif'),
+
+('1003','men','casual','bottom','Simple Jeans','14.99','"M,L,XL,XXL"','"BROWN,GREY,BLUE"','"Jeans for daily wear,afforadable and cool-looking"','13','../assets/images/men_jeans.jfif'),
+
+('1004','men','formal','top','Formal Top','39.99','"S,M,L,XL"','"BLACK,GREY,WHITE"','Formal top for all your office needs','13','../assets/images/men_formal.jfif'),
+
+('1005','men','sports','bottom','Jogger pants','24.99','"M,L,XL. XXL"','"BROWN,BLACK"','Jogging pants for the sports in you','13','../assets/images/men_jogger.jfif'),
+
+('1006','men','sports','top','Dri-fit Top','24.99','"S,M,L,XL"','"BLACK,BROWN,WHITE"','Cooling top for easy sport','13','../assets/images/men_sport1jpg.jpg'),
+
+('1007','men','casual','top','Checkered Top','21.99','"S,M,L,XL"','BROWN','For all formal occasions','13','../assets/images/men_shirt.jfif'),
+
+('1008','men','casual','top','Cotton Top','10.99','"S,M,L,XL"','"BLACK,GREY,WHITE"','For when you emotional','13','../assets/images/men_tshirt.jfif'),
+
+('1009','men','sports','overall','Raincoat','59.99','"S,M,L"','"BLACK,BLUE,NAVYBLUE"','"Rain or shine,this raincoat will shy away all brine"','13','../assets/images/men_water.jfif'),
+
+('1010','men','sports','overall','Jacket','29.99','"S,M,L"','"ORANGE,BLACK,BLUE"','Bright colours to wash away sadness','13','../assets/images/men_jacket.jfif'),
+
+('2001','women','casual','top','Easy Top','17.99','"S,M,L,XL"','"MAROON,BLACK,BLUE,WHITE"','Comfortable wear','13','../assets/images/women_top.jpg'),
+
+('2002','women','casual','top','Smooth Top','20.99','"S,M,L,XL"','"BLACK,WHITE,GREY"','Find the comfort within you','13','../assets/images/women_top2.jpg'),
+
+('2003','women','casual','top','Unusual Wear','18.99','"S,M,L,XL"','"BLACK,WHITE,GREY"','This will make you the centre of attraction','13','../assets/images/women_dress2.jpg'),
+
+('2004','women','casual','bottom','Nice Jeans','26.99','"M,L,XL,XXL"','BLUE','"Jeans for daily wear,afforadable and cool-looking"','13','../assets/images/women_jeans.jpg'),
+
+('2005','women','casual','bottom','Long Pants','25.99','"M,L,XL,XXL"','"YELLOW,WHITE,BLACK,GREY"','Easy to fit pants for everyday use','13','../assets/images/women_pants.jpg'),
+
+('2006','women','sports','top','Warm Jacket','30.99','"S,M,L,XL"','"PURPLE,BLACK,WHITE"','Warm jacket to keep you from the chilly winds','13','../assets/images/women_jacket.jpg'),
+
+('2007','women','sports','bottom','Cool Pants','24.99','"M,L,XL,XXL"','"BLACK,WHITE,GREY"','Cool pants help you to show off the inner you','13','../assets/images/women_shorts.jpg'),
+
+('2008','women','formal','top','Formal Shirt','15.99','"S,M,L,XL"','"MAROON,BLACK,WHITE"','Formal top for all your office needs','13','../assets/images/women_jacket2.jpg'),
+
+('2009','women','formal','top','Formal Jacket','20.99','"S,M,L,XL"','"YELLOW,BLACK"','Formal top for all your office needs','13','../assets/images/women_top3.jpg'),
+
+('2010','women','formal','overall','Formal Dress','21.99','"M,L,XL,XXL"','"BLACK ,GREY"','Silky dress designed by professionals','13','../assets/images/women_dress.jpg'),
+
+('3001','children','casual','bottom','Fun Shorts','10.99','"M,L,XL,XXL"','"BLUE,BLACK,GREY,WHITE"','Comfortable wear for play season','13','../assets/images/kids_blackshorts.jpg'),
+
+('3002','children','casual','bottom','Stretchy Pants','12.99','"M,L,XL,XXL"','"ORANGE,YELLOW,RED"','Bright colours to start your day','13','../assets/images/kids_orangeshorts.jpg'),
+
+('3003','children','casual','top','Small Top','10.99','"S,M,L,XL"','"WHITE,YELLOW,BLACK"','Bright colours to start your day','13','../assets/images/kids_yellowtop.jpg'),
+
+('3004','children','casual','bottom','Denim Pants','21.99','"M,L,XL,XXL"','BLUE','Simple jeans for you','13','../assets/images/kids_denimpants.jpg'),
+
+('3005','children','casual','overall','Woozy Jacket','29.99','"S,M,L"','"BLACK,WHITE,GREY"','Comfortable jacket for all occasions','13','../assets/images/kids_jacket.jpg'),
+
+('3006','children','casual','overall','Good Jacket','29.99','"S,M,L"','"ORANGE,YELLOW,RED"','Bright colours to start your day','13','../assets/images/kids_jacket2.jpg'),
+
+('3007','children','casual','overall','Sweater','31.99','"S,M,L"','GREY','Keep yourself warm while being trendy','13','../assets/images/kids_sweater.jpg);
