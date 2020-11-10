@@ -23,7 +23,7 @@
 
     <!-- item -->
     <div class="catalog">
-      <h5>Product Details</h5>
+      <h1>Product Details</h1>
       <div class="card-container card-wrap">
         <?php 
           require_once ("item-card.php"); 
@@ -53,7 +53,7 @@
               <p><b>Available Size:</b> $row[size]</p>
                           
             <div class='details-form'>
-            <form action='cart.php' method='POST'>
+            <form action='../cart.php' method='POST'>
               <h2>Order Now!</h2><br>
 
               <label>Size</label>
