@@ -16,37 +16,83 @@
     <div class="breadcrumpts-container">
       <ul class="breadcrumb">
         <li><a href="../index.php">Home</a></li>
-        <li><a href="../man">Man</a></li>
-        <li>Jeans</li>
+        <li><a href="../catalog">Catalog</a></li>
+        <li>Details</li>
       </ul>
     </div>
 
-    <!-- catalog -->
+    <!-- item -->
     <div class="catalog">
-      <h5>Jeans</h5>
+      <h5>Product Details</h5>
       <div class="card-container card-wrap">
-        <?php require_once ("item-card.php"); 
-          card("Water-repellent car coat","S$84.85","S, M, L", "../assets/images/men_water.jfif","");
-          card("Shirt Regular Fit","S$29.955","XS, S, M, L","../assets/images/men_shirt.jfif","");
-          card("Cargo Jogger","S$34.85","XS, S, M, L","../assets/images/men_cargo.jfif","" );
-          card("Cotton Cardigan","S$36.15","XS, S, M, L","../assets/images/men_cardigan.jfif","");
-          card("Cotton Cardigan","S$36.15","XS, S, M, L","../assets/images/men_cardigan.jfif","");
-          card("Water-repellent car coat","S$84.85","S, M, L", "../assets/images/men_water.jfif","");
-          card("Shirt Regular Fit","S$29.955","XS, S, M, L","../assets/images/men_shirt.jfif","");
-          card("Cargo Jogger","S$34.85","XS, S, M, L","../assets/images/men_cargo.jfif" ,"");
+        <?php 
+          require_once ("item-card.php"); 
+          require_once '../phpmysql/login.php';
+          $connection = new mysqli($db_hostname, $db_username, $db_password, $db_database);
+          if($connection->connect_error) die($connection->connect_error);
+          //get current existing query
+          $id = (!isset($_GET['id'])) ? $id ='1001': $id = $_GET['id'];
+
+          //get initial total number of page
+          $query = "SELECT * FROM catalog " . " WHERE product_id=$id";
+
+          $result = $connection->query($query);
+          if(!$result) die($connection->error);
+
+          $columns = $result->field_count;
+          if($result->num_rows){
+            $row = $result->fetch_assoc();
+            card($row['name'],$row['price'],$row['size'],$row['img'], $row['product_id']);
+            echo "
+            <div class='detail-card'>
+            <img class='menu-img' src=$row[img] alt='woman' />
+             <div class='item-summary'>
+              <p><b>Item name:</b> Grabs our brand new $row[name]</p>
+              <p><b>Description:</b><br> It is $row[description]. <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lobortis mi. Nulla vel iaculis ante. Integer leo augue, feugiat finibus volutpat posuere, imperdiet nec nunc. </p>
+              <p><b>Current Stocks:</b> $row[stocks]</p>
+              <p><b>Available Size:</b> $row[size]</p>
+                          
+            <div class='details-form'>
+            <form action='item-cart.php' method='POST'>
+              <h2>Order Now!</h2><br>
+
+              <label>Size</label>
+              <select name='size' id='size'>
+                <option value='S'>S</option>
+                <option value='M'>M</option>
+                <option value='L'>L</option>
+                <option value='XL'>XL</option>
+              </select><br>
+
+              <label>Quantity</label>
+              <input type='number' id='qty' name='qty' required placeholder='1'><br>
+
+              <label>Color</label>
+              <select name='color' id='color'>
+                <option value='black'>black</option>
+                <option value='white'>white</option>
+                <option value='grey'>Grey</option>
+              </select><br>
+
+              <label>Special Request</label>
+              <input type='text' id='email' name='email' placeholder='Make sure its good..' required><br>
+
+              <div class='checkout-button'>
+              <a href='#'><button class='btn' name='login'>Add to cart</button></a>
+
+  
+
+              </div>
+            </form>
+            </div>
+              </div>  
+            ";
+          }else {
+            echo "product not available";
+        }
+
         ?>
 
-      </div>
-
-      <div class="pagination">
-        <a href="#">&laquo;</a>
-        <a href="#">1</a>
-        <a href="#" class="active">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-        <a href="#">&raquo;</a>
       </div>
     </div>
 

@@ -16,7 +16,7 @@
     <div class="breadcrumpts-container">
       <ul class="breadcrumb">
         <li><a href="../index.php">Home</a></li>
-        <li>Man</li>
+        <li><?php echo (isset($_GET['gender']))? $_GET['gender'] : 'catalog'?></li>
       </ul>
     </div>
 

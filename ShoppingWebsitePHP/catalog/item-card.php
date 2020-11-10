@@ -1,6 +1,7 @@
 <?php 
-function card($name, $price, $size, $img){
+function card($name, $price, $size, $img, $id){
     $card="
+    <a href='../detail?id=$id'>
     <div class='item-card'>
         <img class='menu-img' src=$img alt='woman' />
         <div class='item-summary'>
@@ -8,8 +9,8 @@ function card($name, $price, $size, $img){
         <p>$price</p>
         <p>$size</p>
         </div>
-    </div>";
+    </div><a/>";
     echo $card;
-}
+}    // <a href='./?cat=$id>><a/>
 ?>
 

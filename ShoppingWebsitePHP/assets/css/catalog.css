@@ -90,6 +90,17 @@ ul.breadcrumb li a:hover {
   transition: 0.5s;
 }
 
+.detail-card {
+  box-shadow: 5px 5px 10px var(--shadowDark), -10px -10px 16px var(--shadowWhite);
+  border-radius: 10px;
+  width: 500px;
+  margin: 10px;
+  /* height: 400px; */
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+}
+
 .item-card:hover {
   box-shadow: 10px 10px 10px var(--shadowDark), -15px -15px 20px var(--shadowWhite);
   transform: translate(0, -10px);

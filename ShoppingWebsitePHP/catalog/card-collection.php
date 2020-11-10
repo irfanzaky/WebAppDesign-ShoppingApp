@@ -10,7 +10,7 @@ function card_collection(){
     $category = (!isset($_GET['cat'])) ? $category = '': $gender = $_GET['cat'];
     $category2 = (!isset($_GET['cat2'])) ? $category2 = '': $gender = $_GET['cat2'];
 
-    $results_per_page = 4;
+    $results_per_page = 8;
     $genderQ = (isset($_GET['gender'])) ? 
         $genderQ =" WHERE gender=$gender ": 
         $genderQ ='';
@@ -32,24 +32,21 @@ function card_collection(){
 
     // determine the sql LIMIT starting number for the results on the displaying page
     $this_page_first_result = ($page-1)*$results_per_page;
-    //    
+      
     // retrieve selected results from database and display them on page
     $page_query="SELECT * FROM catalog". $genderQ.
     " LIMIT $this_page_first_result,$results_per_page";
     // echo $page_query;
-
-
+    
     $result = $connection->query($page_query);
     if(!$result) die($connection->error);
-
-
 
     // draw the card
     echo"<a href='./?page=".($page-1)."' class='prev'>&#10094;</a>";
     $columns = $result->field_count;
     if($result->num_rows){
         while($row = $result->fetch_assoc() ){
-            card($row['name'],$row['price'],$row['size'],$row['img'], "../catalog");
+            card($row['name'],$row['price'],$row['size'],$row['img'], $row['product_id']);
         }}
     echo"<a href='./?page=".($page+1)."'class='next' >&#10095;</a> </div>  ";
 
@@ -59,6 +56,5 @@ function card_collection(){
         echo ( $p==$page ) ? "<a class='active' href='./?page=$p'> $p</a>" :
         "<a href='./?page=$p'> $p</a>";};
     echo "<a href='./?page=".($page+1)."'>&raquo;</a> </div>"; 
-    print_r($_GET);
 }
 ?>
