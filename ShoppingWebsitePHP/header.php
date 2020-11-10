@@ -1,9 +1,9 @@
 <header>
     <nav>
       <ul class="navlink">
-        <li><a href="/WebAppDesign-ShoppingApp/ShoppingWebsitePHP/man">Man</a></li>
-        <li><a href="/WebAppDesign-ShoppingApp/ShoppingWebsitePHP/woman">Woman</a></li>
-        <li><a href="/WebAppDesign-ShoppingApp/ShoppingWebsitePHP/kids">Kids</a></li>
+        <li><a href="/WebAppDesign-ShoppingApp/ShoppingWebsitePHP/catalog/?gender='men'">Man</a></li>
+        <li><a href="/WebAppDesign-ShoppingApp/ShoppingWebsitePHP/catalog/?gender='women'">Woman</a></li>
+        <li><a href="/WebAppDesign-ShoppingApp/ShoppingWebsitePHP/catalog/?gender='children'">Kids</a></li>
       </ul>
     </nav>
     <a href="/WebAppDesign-ShoppingApp/ShoppingWebsitePHP">

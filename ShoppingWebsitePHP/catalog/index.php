@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Fashion Store</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,49 +9,46 @@
   </head>
 
   <body>
-    <!-- Header -->
+    <!-- header -->
     <?php require_once ("../header.php"); ?>
 
     <!-- Breadcrumpts -->
     <div class="breadcrumpts-container">
       <ul class="breadcrumb">
         <li><a href="../index.php">Home</a></li>
-        <li><a href="../man">Man</a></li>
-        <li>Jeans</li>
+        <li>Man</li>
       </ul>
     </div>
 
-    <!-- catalog -->
+    <!-- menu -->
     <div class="catalog">
-      <h5>Jeans</h5>
-      <div class="card-container card-wrap">
-        <?php require_once ("item-card.php"); 
-          card("Water-repellent car coat","S$84.85","S, M, L", "../assets/images/men_water.jfif","");
-          card("Shirt Regular Fit","S$29.955","XS, S, M, L","../assets/images/men_shirt.jfif","");
-          card("Cargo Jogger","S$34.85","XS, S, M, L","../assets/images/men_cargo.jfif","" );
-          card("Cotton Cardigan","S$36.15","XS, S, M, L","../assets/images/men_cardigan.jfif","");
-          card("Cotton Cardigan","S$36.15","XS, S, M, L","../assets/images/men_cardigan.jfif","");
-          card("Water-repellent car coat","S$84.85","S, M, L", "../assets/images/men_water.jfif","");
-          card("Shirt Regular Fit","S$29.955","XS, S, M, L","../assets/images/men_shirt.jfif","");
-          card("Cargo Jogger","S$34.85","XS, S, M, L","../assets/images/men_cargo.jfif" ,"");
-        ?>
-
+      <div class="card-container">
+        <div class="card">
+          <img class="menu-img" src="../assets/images/men_jeans.jfif" alt="kids" />
+          <div class="menu-text">BOTTOM</div>
+        </div>
+        <div class="card">
+          <img class="menu-img" src="../assets/images/men_tshirt.jfif" alt="man" />
+          <div class="menu-text">SPORTS</div>
+        </div>
+        <div class="card">
+          <img class="menu-img" src="../assets/images/men_jogger.jfif" alt="woman" />
+          <div class="menu-text">CASUAL</div>
+        </div>
+        <div class="card">
+          <img class="menu-img" src="../assets/images/men_formal.jfif" alt="kids" />
+          <div class="menu-text">FORMAL</div>
+        </div>
       </div>
 
-      <div class="pagination">
-        <a href="#">&laquo;</a>
-        <a href="#">1</a>
-        <a href="#" class="active">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-        <a href="#">&raquo;</a>
-      </div>
-    </div>
+      <!-- menu-catalog -->
+      <h2>New Arrival</h2>
 
-    <!-- Footer -->
-    <?php require_once ("../footer.php"); ?>
+      <div class="item-card-container card-wrap">
+        <?php require_once("card-collection.php"); card_collection(); ?>
+      </div> 
+     <!-- Footer -->
+     <?php require_once ("../footer.php"); ?>
 
     <!-- Scripts -->
     <script></script>

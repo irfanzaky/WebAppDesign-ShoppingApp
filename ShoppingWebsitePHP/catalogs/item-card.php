@@ -1,7 +1,8 @@
 <?php 
-function card($name, $price, $size, $img){
+function card($name, $price, $size, $img, $link){
     $card="
-    <div class='item-card'>
+    <div class='item-card clickable'>
+        <a href=$link></a>
         <img class='menu-img' src=$img alt='woman' />
         <div class='item-summary'>
         <p>$name</p>

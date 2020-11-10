@@ -3,8 +3,8 @@
     <nav>
         <h2>Shop</h2>
         <ul class="navlink">
-        <li><a href="./man">Man</a></li>
-        <li><a href="/WebAppDesign-ShoppingApp/ShoppingWebsitePHP/woman">Woman</a></li>
+        <li><a href="./catalog/gender='male'">Man</a></li>
+        <li><a href="./catalog/gender='male'">Woman</a></li>
         <li><a href="/WebAppDesign-ShoppingApp/ShoppingWebsitePHP/kids">Kids</a></li>
         <li><a href="kids.php">...</a></li>
         </ul>
