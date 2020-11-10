@@ -53,7 +53,7 @@
               <p><b>Available Size:</b> $row[size]</p>
                           
             <div class='details-form'>
-            <form action='item-cart.php' method='POST'>
+            <form action='cart.php' method='POST'>
               <h2>Order Now!</h2><br>
 
               <label>Size</label>
@@ -75,14 +75,9 @@
               </select><br>
 
               <label>Special Request</label>
-              <input type='text' id='email' name='email' placeholder='Make sure its good..' required><br>
+              <input type='text' id='email' name='email' placeholder='Make sure its on delivered with top quality..' ><br>
 
-              <div class='checkout-button'>
-              <a href='#'><button class='btn' name='login'>Add to cart</button></a>
-
-  
-
-              </div>
+              <input type='submit' value='Add to Cart'>
             </form>
             </div>
               </div>  
@@ -110,6 +105,7 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+        align:right;
       }
 
       input[type=number], select {
@@ -120,12 +116,13 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+        align:right;
       }
 
 
       input[type=submit] {
         width: 80%;
-        background-color: #4CAF50;
+        background-color: #666;
         color: white;
         padding: 14px 20px;
         margin: 8px 0;
@@ -135,7 +132,7 @@
       }
 
       input[type=submit]:hover {
-        background-color: #45a049;
+        background-color: #444;
       }
 
 }
