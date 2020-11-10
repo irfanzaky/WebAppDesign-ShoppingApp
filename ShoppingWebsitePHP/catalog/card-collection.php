@@ -16,9 +16,8 @@ function card_collection(){
         $genderQ ='';
     //get initial total number of page
     $query = "SELECT * FROM catalog ". $genderQ;
-    echo $genderQ;
-    echo"|";
-    
+    // echo $genderQ;
+    // echo"|";
     
     $result = $connection->query($query);
     $number_of_result = mysqli_num_rows($result);
@@ -37,7 +36,7 @@ function card_collection(){
     // retrieve selected results from database and display them on page
     $page_query="SELECT * FROM catalog". $genderQ.
     " LIMIT $this_page_first_result,$results_per_page";
-    echo $page_query;
+    // echo $page_query;
 
 
     $result = $connection->query($page_query);

@@ -44,16 +44,19 @@
     <!-- menu-card -->
     <div class="menu-card-container">
       <div class="menu-card">
+        <a href="./catalog/?gender='women'">
         <img class="menu-img" src="assets/images/woman2.jfif" alt="woman" />
         <div class="menu-text">WOMAN</div>
-      </div>
+      </div></a>
       <div class="menu-card">
+        <a href="./catalog/?gender='men'">
         <img class="menu-img" src="assets/images/man2.jpg" alt="man" />
-        <div class="menu-text">MAN</div>
+        <div class="menu-text">MAN</div></a>
       </div>
       <div class="menu-card">
+        <a href="./catalog/?gender='children'">
         <img class="menu-img" src="assets/images/kids3.jpg" alt="kids" />
-        <div class="menu-text">KIDS</div>
+        <div class="menu-text">KIDS</div></a>
       </div>
     </div>
 
@@ -62,17 +65,19 @@
     <div class="category-card-container">
       <h2>Shop By Category</h2>
       <div class="category-card clickable">
-        <a href="men.php"></a>
+        <a href="./catalog/?cat='sports'">
         <img class="menu-img" src="assets/images/womansports.jpg" alt="woman" />
-        <div class="menu-text">SPORTS WEAR</div>
+        <div class="menu-text">SPORTS WEAR</div></a>
       </div>
       <div class="category-card">
+        <a href="./catalog/?cat='sports'">
         <img class="menu-img" src="assets/images/daily.jpg" alt="man" />
-        <div class="menu-text">DAILY WEAR</div>
+        <div class="menu-text">DAILY WEAR</div></a>
       </div>
       <div class="category-card">
+        <a href="./catalog/?cat='sports'">
         <img class="menu-img" src="assets/images/kids2.jpg" alt="kids" />
-        <div class="menu-text">KIDS</div>
+        <div class="menu-text">KIDS</div></a>
       </div>
     </div>
 

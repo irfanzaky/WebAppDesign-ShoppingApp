@@ -27,18 +27,18 @@
           <img class="menu-img" src="../assets/images/men_jeans.jfif" alt="kids" />
           <div class="menu-text">BOTTOM</div>
         </div>
-        <div class="card">
+        <a href="./?cat='sports'"><div class="card">
           <img class="menu-img" src="../assets/images/men_tshirt.jfif" alt="man" />
           <div class="menu-text">SPORTS</div>
-        </div>
-        <div class="card">
+        </div></a>
+        <a href="./?cat='casual'"><div class="card">
           <img class="menu-img" src="../assets/images/men_jogger.jfif" alt="woman" />
           <div class="menu-text">CASUAL</div>
-        </div>
-        <div class="card">
+        </div></a>
+        <a href="./?cat='formal'"><div class="card">
           <img class="menu-img" src="../assets/images/men_formal.jfif" alt="kids" />
           <div class="menu-text">FORMAL</div>
-        </div>
+        </div></a>
       </div>
 
       <!-- menu-catalog -->
