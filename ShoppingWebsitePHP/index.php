@@ -52,7 +52,7 @@
         <div class="menu-text">MAN</div>
       </div>
       <div class="menu-card">
-        <img class="menu-img" src="assets/images/kids2.jpg" alt="kids" />
+        <img class="menu-img" src="assets/images/kids3.jpg" alt="kids" />
         <div class="menu-text">KIDS</div>
       </div>
     </div>

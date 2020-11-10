@@ -106,7 +106,7 @@ footer {
 }
 .menu-card {
   box-shadow: 5px 5px 10px var(--shadowDark), -10px -10px 16px var(--shadowWhite);
-  width: 400px;
+  width: 500px;
   height: 140px;
   border-radius: 10px;
   margin: 20px;
