@@ -15,38 +15,46 @@ if (!$conn){
 
 //shopping cart
 if(isset($_POST["add_to_cart"]))
-{   echo "sdf";
-    var_dump($_SESSION["add_to_cart"]);
-	if(isset($_SESSION["shopping_cart"]))
-	{   
-        var_dump($_SESSION["shopping_cart"]);
-		$item_array_id = array_column($_SESSION["shopping_cart"], "item_id");
-		if(!in_array($_GET["id"], $item_array_id))
-		{
-		$count = count($_SESSION["shopping_cart"]);
-		$item_array = array(
-		'item_id'		=>	$_GET["id"],
-		'item_name'		=>	$_POST["size"],
-		'item_price'		=>	$_POST["qty"],
-		'item_quantity'		=>	$_POST["request"]
-		);
-		$_SESSION["shopping_cart"][$count] = $item_array;
-		}
-		else
-		{
-		echo '<script>alert("Item Already Added")</script>';
-		}
-	}
-	else
-	{
-		$item_array = array(
-		'item_id'		=>	$_GET["id"],
-		'item_name'		=>	$_POST["hidden_name"],
-		'item_price'		=>	$_POST["hidden_price"],
-		'item_quantity'		=>	$_POST["quantity"]
-		);
-		$_SESSION["shopping_cart"][0] = $item_array;
-	}
+{   
+
+    if(isset($_SESSION["shopping_cart"]))
+    {
+        $item_array_id = array_column($_SESSION["shopping_cart"], "item_id");
+        if(!in_array($_GET["id"], $item_array_id))
+        {
+        $count = count($_SESSION["shopping_cart"]);
+        $item_array = array(
+        'item_id'		=>	$_GET["id"],
+        'item_name'		=>	$_POST["hidden_name"],
+        'item_price'		=>	$_POST["hidden_price"],
+        'item_size'       => $_POST["size"],
+        'item_quantity'		=>	$_POST["qty"],
+        'item_color'       => $_POST["color"],
+        'item_size'       => $_POST["size"],
+        'item_img'       => $_POST["img"],
+        'remarks'       => $_POST["request"],
+        );
+        $_SESSION["shopping_cart"][$count] = $item_array;
+        }
+        else
+        {
+        echo '<script>alert("Item Already Added")</script>';
+        }
+    }
+    else
+    {
+        $item_array = array(
+            'item_id'		=>	$_GET["id"],
+            'item_name'		=>	$_POST["hidden_name"],
+            'item_price'		=>	$_POST["hidden_price"],
+            'item_quantity'		=>	$_POST["qty"],
+            'item_color'       => $_POST["color"],
+            'item_size'       => $_POST["size"],
+            'item_img'       => $_POST["img"],
+            'remarks'       => $_POST["request"],
+        );
+        $_SESSION["shopping_cart"][0] = $item_array;
+    }
 }
 
 
@@ -68,6 +76,21 @@ if(isset($_POST['register'])) {
         if ($conn->query($sql) === FALSE) {
             echo "Data not added";
           }
+}
+if(isset($_GET["action"]))
+{
+	if($_GET["action"] == "delete")
+	{
+		foreach($_SESSION["shopping_cart"] as $keys => $values)
+		{
+		if($values["item_id"] == $_GET["id"])
+		{
+		unset($_SESSION["shopping_cart"][$keys]);
+		echo '<script>alert("Item Removed")</script>';
+		echo '<script>window.location="carts.php"</script>';
+		}
+		}
+	}
 }
 
 // Login button activation

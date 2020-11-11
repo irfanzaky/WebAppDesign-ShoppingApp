@@ -18,15 +18,16 @@ require_once('server.php');
 ?>
     <div class="wrapper">
     <div class="cart-title">
-        <h1>Cart</h1>
+        <h1>Order Confirmed,</h1>
+        <p> We've send confirmation to your email</p>
     </div>
+    
     <div class="cart-page">
     <table class="cart-table">
         <tr>
             <th>Product</th>
             <th>Qty</th>
             <th>SubTotal</th>
-            <th>Delete</th>
         </tr>
         <?php   
         $total = 0;  
@@ -48,12 +49,10 @@ require_once('server.php');
                     <p>Price: $ <?php echo $values["item_price"]; ?></p>
                 </div>
             </div>
-            <td><input class="cartQty" type="number" value="<?php echo $values["item_quantity"]; ?>" min="1"></td>
+            <td><?php echo $values["item_quantity"]; ?></td>
 
             <td class="cartPrice">$ <?php echo number_format($values["item_quantity"] * $values["item_price"], 2) ?></td>
             
-            <td><a href="carts.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Remove</span></a>
-            </td>
         </tr>
     
         <?php  
@@ -65,13 +64,11 @@ require_once('server.php');
     <table class="total-price-table">
     <tr>
         <td>
-            <form action="confirmation.php" method="POST">
             <div class="payment-type">
                 <strong><p>Payment Method</p></strong>
-                <input name = "payment-method" type="radio" value="mastercard" required/><label>MasterCard</label>
-                <input name = "payment-method" type="radio" value="paypal" required/><label>Paypal</label>
             </div>
         </td>
+        <td class="subtotal"> Mastercard</td>
     </tr>
 
     <tr>
@@ -92,9 +89,7 @@ require_once('server.php');
 
     <tr>
         <td colspan=2>
-            <div class="checkout-button">
-                <button type="submit" class="btn" name = "checkout">Checkout</button>
-            </div>
+            
         </td>
     </form>
     </tr>
