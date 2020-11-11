@@ -1,13 +1,10 @@
 <?php
 
 session_start();
-
-
 $servername = "localhost";
-$username = "f34ee";
-$password = "f34ee";
-$dbname = "f34ee";
-
+$username = "root";
+$password = "";
+$dbname = "productdb";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
@@ -15,6 +12,42 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn){
 	die("Connection failed: ".mysqli_connect_error());
 } //End of MySQL connection.
+
+//shopping cart
+if(isset($_POST["add_to_cart"]))
+{   echo "sdf";
+    var_dump($_SESSION["add_to_cart"]);
+	if(isset($_SESSION["shopping_cart"]))
+	{   
+        var_dump($_SESSION["shopping_cart"]);
+		$item_array_id = array_column($_SESSION["shopping_cart"], "item_id");
+		if(!in_array($_GET["id"], $item_array_id))
+		{
+		$count = count($_SESSION["shopping_cart"]);
+		$item_array = array(
+		'item_id'		=>	$_GET["id"],
+		'item_name'		=>	$_POST["size"],
+		'item_price'		=>	$_POST["qty"],
+		'item_quantity'		=>	$_POST["request"]
+		);
+		$_SESSION["shopping_cart"][$count] = $item_array;
+		}
+		else
+		{
+		echo '<script>alert("Item Already Added")</script>';
+		}
+	}
+	else
+	{
+		$item_array = array(
+		'item_id'		=>	$_GET["id"],
+		'item_name'		=>	$_POST["hidden_name"],
+		'item_price'		=>	$_POST["hidden_price"],
+		'item_quantity'		=>	$_POST["quantity"]
+		);
+		$_SESSION["shopping_cart"][0] = $item_array;
+	}
+}
 
 
 // Register button activation
@@ -75,7 +108,6 @@ if(isset($_POST['checkout'])) {
       }
     
 }
-
 
 
 // Get other user info once session is not empty

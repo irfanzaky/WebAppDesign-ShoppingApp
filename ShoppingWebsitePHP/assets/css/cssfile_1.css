@@ -1,0 +1,853 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    height: 100%;
+
+}
+
+body {
+    background-color: #f7f2ee;
+    height: 100vh;
+}
+
+/** Start of nav **/
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    margin-top: 0;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .navbar li a {
+      color: #000;
+      font-weight: 500;
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar li a:hover{
+    color: #757575;
+  }
+  
+  .navbar .logo {
+    font-family: 'Euphoria Script', cursive;
+    font-weight: 1000;
+    color: #000;
+    font-weight: bold;
+    display: block;
+    float: left;
+    font-size: 32px;
+    padding: 13px 20px 13px 0;
+    text-decoration: none;
+  }
+
+  
+  /* menu */
+  
+  .navbar .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .navbar .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .navbar .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: .2s ease-out;
+    width: 18px;
+  }
+  
+  .navbar .menu-icon .navicon:before,
+  .navbar .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .navbar .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .navbar .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .navbar .menu-btn {
+    display: none;
+  }
+  
+  .navbar .menu-btn:checked ~ .menu {
+    max-height: 350px;
+  }
+  
+  .navbar .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .navbar .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .navbar .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+
+/** End of nav **/
+
+/** Start of hero banner **/
+
+.hero-banner-content{
+    margin-top: 10px; /** Lower image to prevent nav from covering **/
+    background: url(img/hero-banner.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;   
+    width: 100%;
+    height: 100vh;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+ }
+
+.tag-line-wrapper {
+    width: 70%;
+    height: 70vh;
+    margin-top: 20px;
+}
+
+.tag-line {
+    color: #FFF;
+    padding-top: 200px;
+}
+
+.tag-line h1{
+    font-size: 50px;
+}
+
+.tag-line p{
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.banner-tag-line {
+    padding-top: 90px;
+    padding-left:40px;
+    color: #FFF;
+}
+
+.banner-tag-line h1 {
+    margin-top: 20px;
+}
+
+
+.order-status-form {
+    width: 510px;
+    height: 395px;
+    background-color: #FFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+.order-status-form-content{
+    padding: 20px;
+}
+
+.order-status-form-content input{
+    margin-top: 16px;
+}
+
+.order-status-form-content h2 {
+    margin-bottom: 10px;
+}
+
+.track-order-button .btn{
+    margin-top: 16px;
+    height: 48px;
+    width: 97.5%;
+    padding: 8px 40px;
+}
+
+.order-status-form input {
+
+    background-color: #e8f0fe;
+    border-width: thin;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 3px;
+    width: 90%;
+    opacity: 1;  
+    z-index: 1;
+ }  
+
+ .pop-form-control {
+    margin-top: 16px;
+}
+
+/** End of hero banner  **/
+
+
+/** Start of Menu Content **/
+
+.wrapper {                /** Set all content with this dimension **/
+    margin: 0 auto 50px; /** Remember to set nav height to prevent info cover **/
+    width: 70%;
+    padding-top: 100px; /** Remember to set to prevent interestion of navbar **/
+    min-height: 80vh;
+}
+
+.top-hero-banner  {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-image: url(img/pasta.jpg);
+}
+
+.product-section-1, .product-section-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto 50px; /** Remember to set nav height to prevent info cover **/
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.product-section-1>div:first-child {
+    flex: 0 1 100%;
+}
+
+.product-section-2>div:first-child {
+    flex: 0 1 100%;
+}
+
+.category {
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.category p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card {
+    background-color: #FFF;
+    height: 397px;
+    width: 350px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card img{
+    border-radius: 6px 6px 0 0;
+    height: 233px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px 20px;
+}
+
+.price {
+    margin-top: -26px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.description {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+img {
+    width: 100%;
+}
+
+/** End of Menu Content **/
+
+/*Start of Cart Button Arrangement CSS*/
+
+.row-buttons {
+    margin-top: 10px;
+    display: flex;
+    height: 52px;
+}
+
+.add-remove-button {
+    display: flex;
+
+}
+    
+#subtract-quantity-button {
+    padding: 2px 11px;
+    margin: 10px 10px 10px 0;
+}
+
+#plus-quantity-button {
+    padding: 2px 11px;
+    margin: 10px;
+}
+
+.product-quantity {
+    width: 24px;
+    text-align: center;
+    margin-top: 11px;
+    font-size: 18px;
+}
+
+#add-to-cart-button {
+    margin-top: 8px;
+    margin-left: 40px;
+    padding: 4px 30px;
+    height: 35px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/*End of Button CSS*/
+
+
+/*Start of Sticky Navigation*/
+
+/* Add a black background color to the top navigation */
+
+
+.navigation-bar-content {
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+.logo p{
+    font-family: 'Euphoria Script', cursive;
+    color: #333;
+}
+
+.navigation-left-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-right-menu {
+    width: 300px;
+    margin-top: 12px;
+    display: flex; 
+    justify-content: space-between;  
+}
+
+.navigation-right-menu .btn{
+    height: 40px;
+    padding: 8px 40px;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    font-weight: semi-bold;
+    color: #333;    /*Text color navigation menu*/
+}
+
+.navigation-bar li {
+        display: inline;
+        margin: 15px;
+}
+
+/*End of Sticky Navigation*/
+
+/*Start of Footer CSS*/
+
+#footer {
+    bottom: 0;
+    background-color: #444242;
+    height: 60px;
+    width: 100%;
+    z-index:2;
+}
+
+#footer p {
+    text-align: center; 
+	color: #b4b4b4;
+	font-size: 70%;
+	font-family: Helvetica,Arial,sans-serif;
+	padding-top: 24px;
+}
+
+/*End of Footer CSS*/
+
+/*Start of styling of button CSS*/
+
+.btn {
+    padding: 12px 40px;
+    background-color: #d6d3d2;
+    color: #555;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #a6a3a3;
+    color: #FFF;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+        
+
+/*End of styling of button CSS*/
+
+/*Start of Cart Table CSS*/
+
+.cart-page{
+    margin: 20px auto;
+    padding:10px 0 0;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+
+.cart-page table {
+    width: 100%;
+}
+
+.product-info-1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.product-info-2{
+    margin-left:20px;
+}
+
+.product-info-2 td {
+    text-align: left;
+}
+
+ table img {
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cart-table th {
+    text-align: left;
+    padding: 5px 0;
+    padding-bottom: 20px;
+}
+
+.cart-table a {
+    text-decoration: none;
+    color: #000;
+}
+
+.cart-table tr:not(:first-child) {
+    height: 120px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-top: -5px;
+}
+
+.total-price th {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.total-price tr{
+    height: 45px;
+}
+
+.total-price-table {
+    background-color: #FFF;
+    border-radius: 4px;
+    padding: 30px;
+
+}
+
+.total-price-table input{
+    margin-top: 10px;
+}
+
+.total-price-table label {
+    margin-left: 8px;
+    margin-right: 50px; /**Adjust Table length**/
+}
+
+.checkout-button{
+    float: right;    
+}
+
+.checkout-button .btn{
+    width: 360px;
+    margin-top: 16px;   
+}
+
+.cartQty {
+    width: 60px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.cartQty:hover{
+    border: none;
+}
+
+.remove {
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.remove:hover{
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+
+}
+/*End of Cart Table CSS*/
+
+/*Start of Order Confirmation Table CSS*/
+
+.order-confirmation-wrapper{
+    margin: 0 auto 50px; /** Remember to set nav height to prevent info cover **/
+    padding-top: 100px; /** Remember to set to prevent interestion of navbar **/
+    width: 50%;
+    min-height: 100vh;  
+}
+
+.order-confirmation {
+    background-color: #FFF;
+    height: auto;
+    padding: 32px 32px 10px;
+}
+
+.order-confirmation h1{
+    margin-bottom: 24px;
+}
+
+.customer-info {
+    margin: 40px 0;
+}
+.order-confirmation p{
+    margin-bottom: 16px;
+}
+
+.order-confrmation-summary-table {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.order-confrmation-summary-table{
+    width: 100%;
+}
+
+.order-confrmation-summary-table th {
+    text-align: left;
+    padding-bottom: 24px;
+}
+
+.order-confrmation-summary-table td {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.order-confrmation-summary-table tr:first-child {
+    width: 500px;
+}
+.order-confrmation-summary-table th:first-child {
+    width: 500px;
+}
+
+.order-confrmation-summary-table th:not(:first-child) {
+    width: 200px;
+}
+.order-confrmation-summary-table td:not(:first-child) {
+    width: 200px;
+}
+
+.final-total-price {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-top: -5px;
+}
+
+.final-total-price td{
+    padding: 8px;
+}
+
+.customer-info td{
+    margin-bottom: 16px;
+}
+
+
+tr.border-top th{
+    padding-top: 32px;
+    border-top: 1px solid #ccc;
+}
+
+#subtotalprice{
+    font-weight: 400;
+}
+.order-confrmation-summary-table{
+    border-spacing: 0; /*Remove spacing between column fo full length border line cover*/
+}
+
+tr.border-bottom th{
+    border-bottom: 1px solid #ccc;
+}
+
+.back-home-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+}
+/*End of Order Confirmation Table CSS*/
+
+/*Start of Qty-Indicator */
+
+.qty-indicator {
+        position: fixed;
+        bottom: 20px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        border-radius: 90%;
+        background-color: #757575;
+        border: 3px solid #fff;
+        box-shadow: 0 0 0 5px #757575;
+        z-index: 5;
+}
+
+.qty-indicator input{
+    width: 35px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 7px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.qty-indicator input:hover{
+    border: none;
+}
+/*End of Qty-Indicator */
+
+.registration-wrapper{
+    width: 40%;
+    margin: 0 auto 50px; /** Remember to set nav height to prevent info cover **/
+    padding-top: 120px; /** Remember to set to prevent interestion of navbar **/
+    min-height: 80vh;
+}
+.registration-confirmation-content{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 50px;
+}
+
+.r-image, .r-text{
+    margin-bottom: 24px;
+}
+.r-image img{
+    width: 70%;
+    height: auto;
+}
+
+@media (min-width: 850px) {
+    .navbar li {
+      float: left;
+    }
+    .navbar li a {
+      padding: 20px 30px;
+    }
+    .navbar .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .navbar .menu-icon {
+      display: none;
+    }
+  }
+  
+@media (max-width: 1720px) {
+    .category{
+        text-align: center;
+        justify-content: center;
+        margin-left: 32px;
+    }
+    .product-section-1, .product-section-2 {
+        width: 100%;
+        justify-content: center;
+    }
+    .card {
+        margin-left: 32px;
+    }
+}
+@media (max-width: 1440px) {
+    .order-confirmation-wrapper{
+        width: 60%;
+    }
+}
+@media (max-width: 1200px) {
+    .logo {
+        margin-left: 16px;
+    }
+    .navigation-bar-content {
+        width: 100%;
+    }
+    .order-confirmation-wrapper{
+        width: 80%;
+    }
+    .registration-wrapper {
+        width: 60%;
+     }
+     .tag-line-wrapper {
+        margin-top: -60px;
+    }
+}
+
+  @media (max-width: 768px) {
+    .order-status-form {
+        width: 345px;
+        margin-right: 10px;
+    }
+    .navigation-bar-content {
+        width: 100%;
+    }
+    .wrapper, .order-confirmation-wrapper{
+        width: 95%;
+    }
+    .order-confirmation{
+        padding: 32px 16px 10px;
+    }
+    table img {
+        width: 120px;
+        height: 90px;
+    }
+    .registration-wrapper {
+       width: 95%;
+    }
+    .order-status-form{
+        margin-top: -20px;
+    }
+    .tag-line-wrapper {
+        margin-top: -80px;
+    }
+  }
+  @media(max-width: 650px){
+      .product-info-2{
+         display: none;
+      }
+      .cart-table th {
+          font-size: 14px;
+      }
+      .cart-table th:not(:first-child) {
+        width: 75px;
+        text-align: center;
+    }
+    .cart-table tr:not(:first-child) {
+        width: 75px;
+        margin-top: -10px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .order-confirmation{
+        font-size: 14px;
+    }
+    .order-confrmation-summary-table th:not(:first-child) {
+        width: 75px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .order-confrmation-summary-table td:not(:first-child) {
+        width: 75px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .total-price {
+        justify-content: center;
+    }
+    .cartQty {
+        width: 40px;
+        font-size: 14px;
+    }
+  }

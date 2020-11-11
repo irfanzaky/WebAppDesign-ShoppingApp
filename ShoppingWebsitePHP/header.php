@@ -11,9 +11,9 @@
     </a>
     <nav>
       <ul class="navlink">
-        <li><a href="about.php">About</a></li>
+        <li><a href="/home.php">About</a></li>
         <li>
-          <a href="/WebAppDesign-ShoppingApp/ShoppingWebsitePHP/cart.php"><button>Cart</button></a>
+          <a href="/WebAppDesign-ShoppingApp/ShoppingWebsitePHP/carts.php"><button>Cart</button></a>
         </li>
       </ul>
     </nav>

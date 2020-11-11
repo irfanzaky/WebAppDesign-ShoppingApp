@@ -53,7 +53,7 @@
               <p><b>Available Size:</b> $row[size]</p>
                           
             <div class='details-form'>
-            <form action='../cart.php' method='POST'>
+            <form action='../carts.php?action=add&id=$row[product_id]' method='POST'>
               <h2>Order Now!</h2><br>
 
               <label>Size</label>
@@ -73,11 +73,14 @@
                 <option value='white'>white</option>
                 <option value='grey'>Grey</option>
               </select><br>
+              <input type='hidden' name='hidden_name' value=$row[name] />
+              <input type='hidden' name='hidden_price' value=$row[price] />
+              <input type='hidden' name='img' value=$row[img] />
 
               <label>Special Request</label>
-              <input type='text' id='email' name='email' placeholder='Make sure its on delivered with top quality..' ><br>
+              <input type='text' id='email' name='request' placeholder='Make sure its on delivered with top quality..' ><br>
 
-              <input type='submit' value='Add to Cart'>
+              <input type='submit' name='add_to_cart' value='Add to Cart'>
             </form>
             </div>
               </div>  
