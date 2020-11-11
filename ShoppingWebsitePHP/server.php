@@ -118,20 +118,27 @@ if(isset($_POST['login'])) {
 
 // Checkout button adding data to database
 if(isset($_POST['checkout'])) {
+    if(!empty($_SESSION["shopping_cart"]))  
+    {  
+        $total = 0;  
+        foreach($_SESSION["shopping_cart"] as $keys => $values)  
+        {  
+
     $totalPrice = $_POST['total-price'];
     $name = $_SESSION['loginName'];
     $today = date("Ymd");
     $rand =strtoupper(substr(uniqid(sha1(time())),0,4));
     $unique = $today . $rand;  
 
-    $sql = "INSERT INTO custorder (orderid, name, totalprice) VALUES ('$unique', '$name', '$totalPrice')";
+    print_r($values);
+
+    $sql = "INSERT INTO custorder (id, item_id, item_name, size, color, qty, price, user, dates) VALUES ('$rand', '$values[item_name]', '$values[item_size]', '$values[item_color]', '$values[item_quantity]', '$values[item_price]','Thomas', '$today')";
 
     if ($conn->query($sql) === FALSE) {
         echo ("Error Description: " .mysqli_error($conn));
       }
-    
+    }}
 }
-
 
 // Get other user info once session is not empty
 $query = "SELECT * FROM users WHERE name = '{$_SESSION['loginName']}' ";
